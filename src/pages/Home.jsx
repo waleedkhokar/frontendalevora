@@ -1,18 +1,15 @@
-import React from 'react';
-import Hero from '../components/home/Hero';
-import StatsSection from '../components/home/StatsSection';
-import FeaturedHoodies from '../components/home/FeaturedHoodies';
-import FeaturesSection from '../components/home/FeaturesSection';
+import Hero from '../components/home/Hero.jsx';
+import StatsSection from '../components/home/StatsSection.jsx';
+import FeaturedProducts from '../components/home/FeaturedProducts.jsx';  
+import FeaturesSection from '../components/home/FeaturesSection.jsx';
 
 const Home = ({ darkMode }) => {
     return (
         <div>
             <Hero darkMode={darkMode} />
             <StatsSection darkMode={darkMode} />
-            <FeaturedHoodies darkMode={darkMode} />
+            <FeaturedProducts darkMode={darkMode} />   {/* FIXED */}
             <FeaturesSection darkMode={darkMode} />
-            
-            
         </div>
     );
 };
